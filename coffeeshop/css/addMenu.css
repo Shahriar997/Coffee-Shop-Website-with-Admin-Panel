@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D0B49F;
+    flex-direction: column;
+}
+header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    max-width: 150px; 
+}
+header ul{
+    position: relative;
+    display:flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 60px;
+    text-decoration: none;
+    color: #2F435A;
+}
+header ul li a:hover{
+    background: #AB6B51;
+    padding: 10px;
+    border-radius: 5%;
+}
+.container{
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #2F435A;
+    position: relative;
+}
+.container .add-form{
+    position: relative;
+    max-width: 70%;
+    min-width: 50%;
+    margin-top: 8%;
+}
+.container .add-form form input[type=text], [type=file],textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+.container .add-form form input[type=submit] {
+    width: 100%;
+    background-color: #AB6B51;
+    color: #2F435A;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container .add-form form input[type=submit]:hover {
+    background-color: #39918C;
+}
+
+@media (max-width: 991px)
+{
+    .container{
+        min-width: 40%;
+    }
+    .container .add-form{
+        min-width: 60%;
+    }
+    .container .add-form form{
+        min-width: 60%;
+    }
+
+}

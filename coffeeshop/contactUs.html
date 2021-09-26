@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,innitial-scale=1.0">
+		<!-- telling the browser to set the widdth as per devices screen-->
+
+	    <meta name="keywords" content="HTML,CSS,JavaScript,PHP">
+	    <meta name="Author" content="Shahriar">
+	    <title>Coffee shop</title>
+        <link rel="icon" href="\coffeeshop\image\logo.png">
+
+	    <link rel="stylesheet" type="text/css" href="\coffeeshop\css\contactUs.css">
+        <link href='https://css.gg/mail.css' rel='stylesheet'>
+        <link href='https://css.gg/phone.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+    </head>
+    <body>
+        <section class="contact">
+        <div class="circle"></div>
+            <header>
+                <a href="index.html" ><img src="\coffeeshop\image\logo.png" class="logo" ></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.php">Menu</a></li>
+                    <li><a href="whatsnew.php">What's New</a></li>
+                    <li><a href="contactUs.html">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>If you're Facing any kind of issue, Feel free to knock us. Your opinion matters the most.
+                    Your Criticism will improve our service.
+                </p>
+            </div>
+            <div class="container"> 
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="material-icons">add_location</i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>House: 241, Rd:42, Block:D,<br>Khilgaon, Dhaka,<br>1219</p>
+                        </div>
+                        </div>
+                    <div class="box">
+                        <div class="icon"><i class="gg-phone"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+8801620440107</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="gg-mail"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>coffeeshop@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ContactForm">
+                    <form action="contact.php" method="POST">
+                        <h2> Send Message</h2>
+                        <div class="inputBox">
+                            <input type="txt" name="name" required="required" placeholder="Full Name">
+                        </div>
+                        <div class="inputBox">
+                            <input type="txt" name="email" required="required" placeholder="Email">
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required" name="message" placeholder = "Type Your Message..."></textarea>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="send" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </section>
+    </body>
+</html>

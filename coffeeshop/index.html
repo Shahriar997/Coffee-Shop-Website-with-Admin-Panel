@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,innitial-scale=1.0">
+		<!-- telling the browser to set the widdth as per devices screen-->
+
+	    <meta name="keywords" content="HTML,CSS,JavaScript,PHP">
+	    <meta name="Author" content="Shahriar">
+	    <title>Coffee shop</title>
+        <link rel="icon" href="\coffeeshop\image\logo.png">
+
+	    <link rel="stylesheet" type="text/css" href="\coffeeshop\css\style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="index.html" ><img src="\coffeeshop\image\logo.png" class="logo" ></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.php">Menu</a></li>
+                    <li><a href="whatsnew.php">What's New</a></li>
+                    <li><a href="contactUs.html">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not just Coffee<br>It's <Span>Coffee Place</Span></h2>
+                    <p>
+                        The daily ground for your coffee. You will get excellent coffee which will refresh your mind and soul. We collect the
+                        coffee beans directly from the farmars and pick the best beans to serve your daily coffe. You will get brewed by forcing 
+                        hot water through finely ground darkly roasted coffee beans. Espresso? Americano? we have all the darkest coffees here. But you
+                        like Latte? or Cappuccino? or Mocha? We have great barista's which will make a wonderful coffee for you and serve them with passion and art.
+                        Our place is perfect to have a coffee. It is so cozy that it will remove your stress.The place is so refreshing that it will give you
+                        a perfect start for your day.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="imgBox">
+                    <img src="\coffeeshop\image\img1.png" class="coffee">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="\coffeeshop\image\thumb1.png" alt="" onclick="imgSlider('img1.png'); circleColorChanger('#AB6B51')"></li>
+                <li><img src="\coffeeshop\image\thumb2.png" alt="" onclick="imgSlider('img2.png'); circleColorChanger('#3b2f2f')"></li>
+                <li><img src="\coffeeshop\image\thumb3.png" alt="" onclick="imgSlider('img3.png'); circleColorChanger('#39918C')"></li>
+            </ul>
+            <ul class="social">
+                <li><a href="#"><img src="\coffeeshop\image\facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="\coffeeshop\image\twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="\coffeeshop\image\instagram.png" alt=""></a></li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            function imgSlider(img_name){
+                const url_first_part = "\\coffeeshop\\image\\";
+                document.querySelector(".coffee").src=url_first_part+img_name;
+            }
+            function circleColorChanger(cricle_color){
+                document.querySelector(".circle").style.background=cricle_color;
+            }
+        </script>
+    </body>
+</html>
